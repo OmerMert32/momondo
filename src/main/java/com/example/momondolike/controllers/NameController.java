@@ -50,7 +50,6 @@ public class NameController {
                 .retrieve()
                 .bodyToMono(Age.class);
         return age;
-
     }
 
     Mono<Gender> getGender (String name){
@@ -71,5 +70,4 @@ public class NameController {
                 .bodyToMono(Nationality.class);
         return nationality;
     }
-
 }
